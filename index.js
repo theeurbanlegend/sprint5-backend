@@ -10,13 +10,13 @@ const app=express()
 app.use(logger)
 app.use(express.json())
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://sprint5-front.vercel.app',
     credentials: true,
 }))
 
 app.use(cookieParser())
 // ROUTES
-app.use('/img', express.static(path.join(__dirname,'..','img')));
+app.use('/img', express.static(path.join(__dirname,'img')));
 app.use('/items',require('./routes/itemRoutes'))
 app.use('/users',require('./routes/buyerRoutes'))
 app.use('/signup',require('./routes/signupRoute'))
@@ -24,7 +24,7 @@ app.use('/buy',require('./routes/buyItem'))
 app.use('/work',require('./routes/employeeRoutes'))
 app.use('/auth',require('./routes/authRoutes'))
 app.all('*',(req,res)=>{
-    res.sendFile(path.join(__dirname,'..','views','404.html'))
+    res.sendFile(path.join(__dirname,'views','404.html'))
 })
 
 
