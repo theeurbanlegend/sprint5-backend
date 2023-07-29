@@ -10,7 +10,7 @@ const app=express()
 app.use(logger)
 app.use(express.json())
 app.use(cors({
-    origin: 'https://sprint5-front.vercel.app/',
+    origin: 'https://sprint5-front.vercel.app',
     credentials: true,
 }))
 
