@@ -11,13 +11,7 @@ const corsOptions=require('./config/corsOptions')
 app.use(logger)
 app.use(express.json())
 app.use(cors(corsOptions))
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'https://sprint5-front.vercel.app');
-    res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
-    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization');
-    res.header('Access-Control-Allow-Credentials', 'true');
-    next();
-  });
+
 app.use(cookieParser())
 // ROUTES
 app.use('/img', express.static(path.join(__dirname,'img')));
