@@ -33,7 +33,7 @@ const addBuyers=asyncHandler(async(req,res)=>{
         {
             "Info": {
                 "username": savedBuyer.username,
-                "roles": "user" // Assign default role for the user (you can customize as needed)
+                "roles": ["User"] // Assign default role for the user (you can customize as needed)
             }
         },
         process.env.ACCESS_TOKEN_SECRET,
