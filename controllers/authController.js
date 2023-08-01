@@ -134,8 +134,8 @@ const refresh = (req, res) => {
         asyncHandler(async (err, decoded) => {
             if (err) return res.status(403).json({ msg: 'Forbidden' })
             console.log(decoded)
-            const verified=await Employee.findOne({username:decoded.username }).exec()
-            const user=await Buyer.findOne({username:decoded.username }).exec()
+            const verified=await Employee.findOne({username:decoded.Info.username }).exec()
+            const user=await Buyer.findOne({username:decoded.Info.username }).exec()
             if (!verified&&!user){
             return res.status(401).json({ msg: 'Unauthorized' })
             }else if(verified){
