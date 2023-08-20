@@ -234,3 +234,5 @@
 20230802	15:34:01	01ee2ebc-390d-4399-a713-9a476cd795f9	ReferenceError:messagename is not defined	POST	/mess	http://localhost:5173
 20230820	09:57:20	69b37219-09e2-44fa-8d83-9a838007d139	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/work	http://localhost:5173
 20230820	09:57:21	f0679a81-ee79-410f-b270-e1531bad9a2a	Too Many Requests: Too many login attempts from this IP, please try again after a 60 second pause	POST	/work	http://localhost:5173
+20230820	16:46:42	3e3b0ce0-246a-483e-a172-78dff5dbb7c2	Error:Not allowed by CORS	OPTIONS	/auth/users	http://localhost:5173
+20230820	16:46:54	b2d39c22-87ae-4d45-b269-92411dc50980	Error:Not allowed by CORS	OPTIONS	/auth/users	http://localhost:5173
