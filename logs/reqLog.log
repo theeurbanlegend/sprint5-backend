@@ -2265,3 +2265,15 @@
 20230820	16:47:52	4d3aa1cc-df36-4b34-80b0-ebb65e10e603	GET	$/users	https://sprint5-front.vercel.app
 20230820	16:48:00	061e0f37-4552-49b9-bf85-dcdea97fc671	OPTIONS	$/auth/logout	https://sprint5-front.vercel.app
 20230820	16:48:00	a522b8f2-9f9b-4cf1-a76f-c1d50a051497	POST	$/auth/logout	https://sprint5-front.vercel.app
+20230820	16:58:07	9df07694-b248-4bcc-9fed-7a7d44ab9d76	OPTIONS	$/auth/users	https://sprint5-front.vercel.app
+20230820	16:58:07	03618d33-15f4-44d3-bd9e-1cbd94cc0dee	POST	$/auth/users	https://sprint5-front.vercel.app
+20230820	16:58:08	5048ba16-caed-4ebc-8059-7e8e8c9fdf03	OPTIONS	$/items	https://sprint5-front.vercel.app
+20230820	16:58:08	fb2a5eac-4c7d-4094-8c9c-f0370de8a5dc	OPTIONS	$/work	https://sprint5-front.vercel.app
+20230820	16:58:08	48ecabe8-673a-4b5a-b0fd-14f4bc06dcd5	OPTIONS	$/users	https://sprint5-front.vercel.app
+20230820	16:58:08	412e4d14-3287-4394-81b5-453207c3ae01	GET	$/items	https://sprint5-front.vercel.app
+20230820	16:58:08	afdf1e98-a35a-44a9-838e-8fbacba353a4	GET	$/work	https://sprint5-front.vercel.app
+20230820	16:58:08	e23a3446-3219-4dc6-bcb0-3cab83cdbc0d	GET	$/users	https://sprint5-front.vercel.app
+20230820	16:58:30	1b71ed50-d582-4802-bfcc-c30b775fb5a6	OPTIONS	$/buy	https://sprint5-front.vercel.app
+20230820	16:58:30	71c8db0a-daac-4d44-bfd2-17d58f8786c3	POST	$/buy	https://sprint5-front.vercel.app
+20230820	16:58:31	c3918aa2-c247-4654-82af-020c46b9e89e	OPTIONS	$/items	https://sprint5-front.vercel.app
+20230820	16:58:31	f5a06213-81c6-4633-8814-c36c480960b9	GET	$/items	https://sprint5-front.vercel.app
