@@ -39,7 +39,12 @@ const checkUser=asyncHandler(async(req,res)=>{
             {expiresIn: '1m'}
         )
         const refreshToken=jwt.sign(
-            {"username": verified.username},
+            {
+                "Info":{
+                    "username":verified.username,
+                    "roles":verified.roles
+                }
+            },
             process.env.REFRESH_TOKEN_SECRET,
             {expiresIn: "10m"}//set to 7 days
         )
