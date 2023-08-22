@@ -17,7 +17,7 @@ const server=http.createServer(app)
 
 const io=new Server(server,{
     cors:{
-        origin:'https://sprint5-front.vercel.app',
+        origin:['https://sprint5-front.vercel.app','http://localhost:5173'],
         methods:["GET",'POST']
     }
 })
