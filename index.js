@@ -43,7 +43,7 @@ mongoose.connect(process.env.MONGO_URI)
 app.use(errHandler)
 
 
-server.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT,()=>{
     console.log(`Server is functional and running on port ${process.env.PORT}`)
     
 })
