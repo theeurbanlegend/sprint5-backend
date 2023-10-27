@@ -12,32 +12,7 @@ const corsOptions=require('./config/corsOptions')
 app.use(logger)
 app.use(express.json())
 app.use(cors(corsOptions))
-const {Server}=require('socket.io')
-const server=http.createServer(app)
 
-const io=new Server(server,{
-    cors:{
-        origin:['https://sprint5-front.vercel.app'],
-        methods:["GET",'POST']
-    }
-})
-
-io.on('connection',(socket)=>{
-    console.log(`User ${socket.id} connected`)  
-    //when broadcasting to one room
-    socket.on('send_message',(data)=>{
-        socket.broadcast.emit('receive_message',data)
-    })
-    //when broadcasting on different rooms
-    /* socket.on('send_message',(data)=>{
-        socket.to(data.room).emit('receive_message',data)
-    }) 
-    socket.on('join_room', (data)=>{
-        socket.join(data)
-    }) */
-
-
-})
 
 app.use(cookieParser())
 // ROUTES
