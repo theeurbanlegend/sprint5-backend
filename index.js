@@ -1,19 +1,18 @@
 require('dotenv').config()
 const express=require('express')
+const app=express()
 const path=require('path')
 const {logger}=require('./middleware/logger')
 const cookieParser=require('cookie-parser')
 const mongoose=require('mongoose')
 const cors=require('cors')
 const errHandler=require('./middleware/errhandler')
-const app=express()
+
 const http=require('http')
 const corsOptions=require('./config/corsOptions')
+app.use(cors(corsOptions))
 app.use(logger)
 app.use(express.json())
-app.use(cors(corsOptions))
-
-
 app.use(cookieParser())
 // ROUTES
 app.use('/img', express.static(path.join(__dirname,'img')));
