@@ -1,14 +1,6 @@
 const allowedOptions=require('./allowedOrigins')
 
-const corsOptions={
-    origin:(origin,callback)=>{
-        if(allowedOptions.indexOf(origin)!==-1||!origin){
-            callback(null,true)
-        }else{
-            callback(new Error('Not allowed by CORS'))
-        }
-    },
-    credentials:true,
-    optionsSuccessStatus:200
+const corsOptions = {
+  origin: 'https://sprint5-front.vercel.app/', // Replace with the actual URL of your specific route
 }
 module.exports=corsOptions
